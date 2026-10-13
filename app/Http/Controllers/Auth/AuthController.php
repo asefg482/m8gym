@@ -86,7 +86,18 @@ class AuthController extends Controller
         }
 
         $otpData = OtpCode::createCode($mobile, $request->ip());
-        $this->smsManager->sendOtp($mobile, $otpData['code']);
+        $sent = $this->smsManager->sendOtp($mobile, $otpData['code']);
+
+        if (! $sent && app()->isProduction()) {
+            if ($request->wantsJson()) {
+                return response()->json([
+                    'message' => 'ارسال پیامک با خطا مواجه شد. لطفاً چند لحظه بعد مجدداً تلاش کنید.',
+                    'errors' => ['mobile' => ['ارسال پیامک با خطا مواجه شد.']],
+                ], 500);
+            }
+
+            return back()->withErrors(['mobile' => 'ارسال پیامک با خطا مواجه شد. لطفاً چند لحظه بعد مجدداً تلاش کنید.']);
+        }
 
         if ($request->wantsJson()) {
             return response()->json([
