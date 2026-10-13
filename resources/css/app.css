@@ -1,5 +1,5 @@
-@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
 @import 'tailwindcss';
+@import '../../public/fonts/vazirmatn/font-face.css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -7,15 +7,24 @@
 @source '../js/**/*.{vue,js,ts}';
 
 @theme {
-    --font-sans: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'Vazirmatn', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     --color-brand: #ccff00;
     --color-brand-hover: #b3e600;
     --color-brand-orange: #ff5500;
 }
 
-html {
+html, body {
     direction: rtl;
     font-family: var(--font-sans);
+}
+
+*, ::before, ::after {
+    font-family: inherit;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
 }
 
 /* Custom dark scrollbar */

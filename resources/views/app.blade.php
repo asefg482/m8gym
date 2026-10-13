@@ -12,6 +12,9 @@
     <title inertia>{{ config('app.name', 'M8 Gym') }} - مجموعه ورزشی و تندرستی ساری</title>
     <meta name="description" content="باشگاه بدنسازی و فیت‌نس M8 ساری | سالن مجهز ۲۵۰۰ متری، مربیان رسمی، بوفه سلامت، ماساژ و آرایشگاه">
 
+    <!-- Persian Font: Vazirmatn (Local) -->
+    <link rel="stylesheet" href="/fonts/vazirmatn/font-face.css">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fa_IR">

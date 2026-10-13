@@ -1,32 +1,35 @@
 {
   "\u0000plugin-vue:export-helper": [
-    "/build/assets/Home-C3CkPGo6.js",
+    "/build/assets/Home-BOQoxK44.js",
     "/build/assets/Home-B4S4zj0C.css"
   ],
   "node_modules/laravel-vite-plugin/inertia-helpers/index.js": [],
   "resources/js/Components/BottomNav.vue": [
-    "/build/assets/PublicLayout-B_Abv_MX.js"
+    "/build/assets/PublicLayout-zNrlFzv-.js"
   ],
   "resources/js/Components/DynamicIcon.vue": [
-    "/build/assets/PanelLayout-DMO8LLY9.js"
+    "/build/assets/PanelLayout-DGUuVM6t.js"
   ],
   "resources/js/Components/FlashMessage.vue": [
     "/build/assets/FlashMessage-D7IaXkt7.js"
   ],
   "resources/js/Components/Footer.vue": [
-    "/build/assets/PublicLayout-B_Abv_MX.js"
+    "/build/assets/PublicLayout-zNrlFzv-.js"
   ],
   "resources/js/Components/Navbar.vue": [
-    "/build/assets/PublicLayout-B_Abv_MX.js"
+    "/build/assets/PublicLayout-zNrlFzv-.js"
+  ],
+  "resources/js/Components/Pagination.vue": [
+    "/build/assets/Pagination-BBik0JPe.js"
   ],
   "resources/js/Components/RoleSwitcher.vue": [
     "/build/assets/RoleSwitcher-Sid3IMe_.js"
   ],
   "resources/js/Layouts/PanelLayout.vue": [
-    "/build/assets/PanelLayout-DMO8LLY9.js"
+    "/build/assets/PanelLayout-DGUuVM6t.js"
   ],
   "resources/js/Layouts/PublicLayout.vue": [
-    "/build/assets/PublicLayout-B_Abv_MX.js"
+    "/build/assets/PublicLayout-zNrlFzv-.js"
   ],
   "resources/js/Pages/Auth/Login.vue": [
     "/build/assets/Login-BTlBKqWf.js"
@@ -35,141 +38,141 @@
     "/build/assets/SelectRole-COAZh-ed.js"
   ],
   "resources/js/Pages/Panel/Buffet/Dashboard.vue": [
-    "/build/assets/Dashboard-COoA7T7u.js"
+    "/build/assets/Dashboard-w9NQ4Aa-.js"
   ],
   "resources/js/Pages/Panel/Buffet/Menu.vue": [
-    "/build/assets/Menu-Bxgj0i_7.js"
+    "/build/assets/Menu-CiOvgNur.js"
   ],
   "resources/js/Pages/Panel/Buffet/Orders.vue": [
-    "/build/assets/Orders-BMplniM1.js"
+    "/build/assets/Orders-CxKN01V4.js"
   ],
   "resources/js/Pages/Panel/Buffet/Pos.vue": [
-    "/build/assets/Pos-DAlfS6Gz.js"
+    "/build/assets/Pos-C7sef3kt.js"
   ],
   "resources/js/Pages/Panel/Buffet/Sales.vue": [
-    "/build/assets/Sales-CuSXsfU3.js"
+    "/build/assets/Sales-DAZB1TEm.js"
   ],
   "resources/js/Pages/Panel/Manager/Banners.vue": [
-    "/build/assets/Banners-DqF9E5mX.js"
+    "/build/assets/Banners-XKa1v0hP.js"
   ],
   "resources/js/Pages/Panel/Manager/Leads.vue": [
-    "/build/assets/Leads-Cgj-xYxh.js"
+    "/build/assets/Leads-C1Du3Hqy.js"
   ],
   "resources/js/Pages/Panel/Manager/Plans.vue": [
-    "/build/assets/Plans-6BBSevmZ.js"
+    "/build/assets/Plans-w2Sj1h-g.js"
   ],
   "resources/js/Pages/Panel/Manager/RoleMatrix.vue": [
-    "/build/assets/RoleMatrix-BJIQ3wgL.js"
+    "/build/assets/RoleMatrix-B7x6CsiQ.js"
   ],
   "resources/js/Pages/Panel/Manager/Settings.vue": [
-    "/build/assets/Settings-CGpHPles.js"
+    "/build/assets/Settings-BsmbVhu4.js"
   ],
   "resources/js/Pages/Panel/Member/Bookings.vue": [
-    "/build/assets/Bookings-BiCEL7Sb.js"
+    "/build/assets/Bookings-DZ5ce6ao.js"
   ],
   "resources/js/Pages/Panel/Member/Dashboard.vue": [
-    "/build/assets/Dashboard-CZLb2_r7.js"
+    "/build/assets/Dashboard-Btov5cF4.js"
   ],
   "resources/js/Pages/Panel/Member/History.vue": [
-    "/build/assets/History-BqTbSO65.js"
+    "/build/assets/History-DeuC2X76.js"
   ],
   "resources/js/Pages/Panel/Member/Membership.vue": [
-    "/build/assets/Membership-BnqoGI9e.js"
+    "/build/assets/Membership-CoBklutH.js"
   ],
   "resources/js/Pages/Panel/Member/Orders.vue": [
-    "/build/assets/Orders-B90qXaNx.js"
+    "/build/assets/Orders-CACxyqrR.js"
   ],
   "resources/js/Pages/Panel/Member/Progress.vue": [
-    "/build/assets/Progress-_6slrIpo.js"
+    "/build/assets/Progress-Bfu0zI6h.js"
   ],
   "resources/js/Pages/Panel/Member/WorkoutPlans.vue": [
-    "/build/assets/WorkoutPlans-Cdx8LmJe.js"
+    "/build/assets/WorkoutPlans-D_rMKTFn.js"
   ],
   "resources/js/Pages/Panel/Service/Bookings.vue": [
-    "/build/assets/Bookings-tEP_Wgqe.js"
+    "/build/assets/Bookings-CcT1ERq8.js"
   ],
   "resources/js/Pages/Panel/Service/Dashboard.vue": [
-    "/build/assets/Dashboard-CkXsQhz7.js"
+    "/build/assets/Dashboard-BCs-iVyy.js"
   ],
   "resources/js/Pages/Panel/Service/Schedule.vue": [
-    "/build/assets/Schedule-fal-6wDd.js"
+    "/build/assets/Schedule--AhTFzYu.js"
   ],
   "resources/js/Pages/Panel/Service/Services.vue": [
-    "/build/assets/Services-CQX3UlS2.js"
+    "/build/assets/Services-_YVFbLF4.js"
   ],
   "resources/js/Pages/Panel/Shop/Categories.vue": [
-    "/build/assets/Categories-CjuMQM08.js"
+    "/build/assets/Categories-C5uLbkCI.js"
   ],
   "resources/js/Pages/Panel/Shop/Dashboard.vue": [
-    "/build/assets/Dashboard-BsZq0FGo.js"
+    "/build/assets/Dashboard-By9ew2Ct.js"
   ],
   "resources/js/Pages/Panel/Shop/Orders.vue": [
-    "/build/assets/Orders-DLaLiMJ3.js"
+    "/build/assets/Orders-0Qo3yPmm.js"
   ],
   "resources/js/Pages/Panel/Shop/Pos.vue": [
-    "/build/assets/Pos-CvXeFQvO.js"
+    "/build/assets/Pos-B_rZjviM.js"
   ],
   "resources/js/Pages/Panel/Shop/Products.vue": [
-    "/build/assets/Products-UQsSaHCS.js"
+    "/build/assets/Products-CI4N9N5w.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Attendances.vue": [
-    "/build/assets/Attendances-Dz16uMW5.js"
+    "/build/assets/Attendances-d88ER_hw.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Audit.vue": [
-    "/build/assets/Audit-CHaD0HL0.js"
+    "/build/assets/Audit-DqBoIdh9.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Dashboard.vue": [
-    "/build/assets/Dashboard-p6qXujWo.js"
+    "/build/assets/Dashboard-BEZwULdP.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Reports.vue": [
-    "/build/assets/Reports-DhTTHnAs.js"
+    "/build/assets/Reports-BN1ZiQ-h.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Settings.vue": [
-    "/build/assets/Settings-DlubPHUY.js"
+    "/build/assets/Settings-CFPMLClB.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/UserDetail.vue": [
-    "/build/assets/UserDetail-C8kbd95m.js"
+    "/build/assets/UserDetail-CtLg1iyE.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Users.vue": [
-    "/build/assets/Users-7kWEXIOs.js"
+    "/build/assets/Users-4PCmJZP7.js"
   ],
   "resources/js/Pages/Panel/Trainer/Dashboard.vue": [
-    "/build/assets/Dashboard-OLh2Mqdr.js"
+    "/build/assets/Dashboard-D9QH6l7L.js"
   ],
   "resources/js/Pages/Panel/Trainer/Incomes.vue": [
-    "/build/assets/Incomes-D_aRxumR.js"
+    "/build/assets/Incomes-DTRAxXgA.js"
   ],
   "resources/js/Pages/Panel/Trainer/Profile.vue": [
-    "/build/assets/Profile-B27ru6u-.js"
+    "/build/assets/Profile-DfSfb2c9.js"
   ],
   "resources/js/Pages/Panel/Trainer/Students.vue": [
-    "/build/assets/Students-CQPaQPLn.js"
+    "/build/assets/Students-CXVf7Ea5.js"
   ],
   "resources/js/Pages/Panel/Trainer/WorkoutPlans.vue": [
-    "/build/assets/WorkoutPlans-ChTMHcGV.js"
+    "/build/assets/WorkoutPlans-Cnt28hGP.js"
   ],
   "resources/js/Pages/Public/Cafe.vue": [
-    "/build/assets/Cafe-8Rr9XJPX.js"
+    "/build/assets/Cafe-68dxk5rl.js"
   ],
   "resources/js/Pages/Public/Hairdresser.vue": [
-    "/build/assets/Hairdresser-SwlqkkQ7.js"
+    "/build/assets/Hairdresser-CGkWOKns.js"
   ],
   "resources/js/Pages/Public/Home.vue": [
-    "/build/assets/Home-C3CkPGo6.js",
+    "/build/assets/Home-BOQoxK44.js",
     "/build/assets/Home-B4S4zj0C.css"
   ],
   "resources/js/Pages/Public/Home.vue?vue&type=style&index=0&scoped=9ac7f2cc&lang.css": [
-    "/build/assets/Home-C3CkPGo6.js",
+    "/build/assets/Home-BOQoxK44.js",
     "/build/assets/Home-B4S4zj0C.css"
   ],
   "resources/js/Pages/Public/Massage.vue": [
-    "/build/assets/Massage-DJm72JHq.js"
+    "/build/assets/Massage-DwGTWWVu.js"
   ],
   "resources/js/Pages/Public/ProductDetail.vue": [
-    "/build/assets/ProductDetail-njL6tUVH.js"
+    "/build/assets/ProductDetail-Bae-Bhct.js"
   ],
   "resources/js/Pages/Public/Shop.vue": [
-    "/build/assets/Shop-Bn8G79cp.js"
+    "/build/assets/Shop-CNe4L0Lg.js"
   ],
   "resources/js/Utils/formatters.js": [
     "/build/assets/formatters-GAWR9pZC.js"
