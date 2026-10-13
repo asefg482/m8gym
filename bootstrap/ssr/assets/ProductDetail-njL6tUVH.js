@@ -1,5 +1,5 @@
 import { r as formatPrice } from "./formatters-GAWR9pZC.js";
-import { t as _sfc_main$1 } from "./PublicLayout-BmUbivea.js";
+import { t as _sfc_main$1 } from "./PublicLayout-B_Abv_MX.js";
 import { createBlock, createCommentVNode, createTextVNode, createVNode, openBlock, ref, toDisplayString, unref, useSSRContext, withCtx } from "vue";
 import { Head, Link, router } from "@inertiajs/vue3";
 import { ssrIncludeBooleanAttr, ssrInterpolate, ssrRenderAttr, ssrRenderClass, ssrRenderComponent } from "vue/server-renderer";

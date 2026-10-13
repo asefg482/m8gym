@@ -1,0 +1,186 @@
+services:
+  # ----------------------------------------------------------------------------
+  # App: Laravel 12 + Inertia SSR Powered by FrankenPHP (Caddy + PHP 8.4)
+  # ----------------------------------------------------------------------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: m8gym-app:latest
+    pull_policy: build
+    container_name: m8gym_app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    env_file:
+      - .env
+    environment:
+      - SERVER_NAME=:80
+      - INERTIA_SSR_URL=http://ssr:13714
+    volumes:
+      - ./storage:/var/www/html/storage
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - m8gym-network
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.m8gym.rule=Host(`m8gym.com`) || Host(`www.m8gym.com`)"
+      - "traefik.http.routers.m8gym.entrypoints=web,websecure"
+      - "traefik.http.routers.m8gym.tls=true"
+      - "traefik.http.services.m8gym.loadbalancer.server.port=80"
+
+  # ----------------------------------------------------------------------------
+  # phpMyAdmin: Web-Based Database Administration Tool
+  # ----------------------------------------------------------------------------
+  phpmyadmin:
+    image: docker.arvancloud.ir/library/phpmyadmin:latest
+    container_name: m8gym_pma
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 0
+      UPLOAD_LIMIT: 100M
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - m8gym-network
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.db-m8gym.rule=Host(`db.m8gym.com`)"
+      - "traefik.http.routers.db-m8gym.entrypoints=web,websecure"
+      - "traefik.http.routers.db-m8gym.tls=true"
+      - "traefik.http.services.db-m8gym.loadbalancer.server.port=80"
+
+  # ----------------------------------------------------------------------------
+  # DB: MariaDB LTS Relational Database Service (Private - No Exposed Ports)
+  # ----------------------------------------------------------------------------
+  db:
+    image: docker.arvancloud.ir/library/mariadb:lts
+    container_name: m8gym_db
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-m8gym}
+      MYSQL_USER: ${DB_USERNAME:-m8gym}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-m8gym_secret}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root_secret}
+    volumes:
+      - ./data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h localhost -u root -p$${MYSQL_ROOT_PASSWORD} || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+    networks:
+      - m8gym-network
+
+  # ----------------------------------------------------------------------------
+  # Redis: In-Memory Cache, Session and High-Speed Queue Store
+  # ----------------------------------------------------------------------------
+  redis:
+    image: docker.arvancloud.ir/library/redis:7-alpine
+    container_name: m8gym_redis
+    restart: unless-stopped
+    command: redis-server
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - m8gym-network
+
+  # ----------------------------------------------------------------------------
+  # Queue: Background Asynchronous Queue Worker (SMS, Jobs, Notifications)
+  # ----------------------------------------------------------------------------
+  queue:
+    image: m8gym-app:latest
+    pull_policy: never
+    healthcheck:
+      disable: true
+    container_name: m8gym_queue
+    restart: unless-stopped
+    command: php /var/www/html/artisan queue:work --sleep=3 --tries=3 --timeout=90 --max-time=3600
+    env_file:
+      - .env
+    environment:
+      - RUN_MIGRATIONS=false
+      - SKIP_OPTIMIZE=true
+    volumes:
+      - ./storage:/var/www/html/storage
+    depends_on:
+      app:
+        condition: service_started
+      redis:
+        condition: service_healthy
+    networks:
+      - m8gym-network
+
+  # ----------------------------------------------------------------------------
+  # Scheduler: Cron & Periodic Task Automation (Subscription Expiry, Reminders)
+  # ----------------------------------------------------------------------------
+  scheduler:
+    image: m8gym-app:latest
+    pull_policy: never
+    healthcheck:
+      disable: true
+    container_name: m8gym_scheduler
+    restart: unless-stopped
+    command: php /var/www/html/artisan schedule:work
+    env_file:
+      - .env
+    environment:
+      - RUN_MIGRATIONS=false
+      - SKIP_OPTIMIZE=true
+    volumes:
+      - ./storage:/var/www/html/storage
+    depends_on:
+      app:
+        condition: service_started
+      db:
+        condition: service_healthy
+    networks:
+      - m8gym-network
+
+  # ----------------------------------------------------------------------------
+  # SSR: Inertia Server-Side Rendering Node.js Daemon (Internal Port 13714)
+  # ----------------------------------------------------------------------------
+  ssr:
+    image: m8gym-app:latest
+    pull_policy: never
+    healthcheck:
+      disable: true
+    container_name: m8gym_ssr
+    restart: unless-stopped
+    command: node /var/www/html/bootstrap/ssr/ssr.js
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - RUN_MIGRATIONS=false
+      - SKIP_OPTIMIZE=true
+    depends_on:
+      app:
+        condition: service_started
+    networks:
+      - m8gym-network
+
+# ------------------------------------------------------------------------------
+# Networks
+# ------------------------------------------------------------------------------
+networks:
+  m8gym-network:
+    driver: bridge
+  traefik:
+    external: true

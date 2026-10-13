@@ -1,0 +1,46 @@
+services:
+  app:
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - SKIP_OPTIMIZE=true
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/node_modules
+      - /var/www/html/vendor
+    ports:
+      - "8000:80"
+
+  db:
+    ports:
+      - "3306:3306"
+
+  redis:
+    ports:
+      - "6379:6379"
+
+  phpmyadmin:
+    ports:
+      - "8080:80"
+
+  # Optional Vite HMR development server
+  vite:
+    image: docker.arvancloud.ir/library/node:22-alpine
+    container_name: m8gym_vite
+    working_dir: /var/www/html
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/node_modules
+    ports:
+      - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    networks:
+      - m8gym-network
+
+networks:
+  traefik:
+    name: traefik
+    external: false

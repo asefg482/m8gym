@@ -31,7 +31,7 @@ function orderItem(item) {
         <section class="relative bg-zinc-950 border-b border-zinc-800/80 py-16 sm:py-24 overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img
-                    src="/images/gym/m8_protein_bar.jpg"
+                    src="/images/gym/cafe_smoothie_clean.jpg"
                     alt="کافه بار پروتئینی M8"
                     class="w-full h-full object-cover opacity-25"
                 />
@@ -82,7 +82,7 @@ function orderItem(item) {
                             <div>
                                 <div class="h-44 rounded-2xl overflow-hidden mb-4 bg-zinc-950">
                                     <img
-                                        :src="item.images?.[0] || '/images/gym/m8_protein_bar.jpg'"
+                                        :src="item.images?.[0] || '/images/gym/cafe_smoothie_clean.jpg'"
                                         :alt="item.title"
                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                     />

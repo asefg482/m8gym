@@ -1,5 +1,5 @@
 import { r as formatPrice } from "./formatters-GAWR9pZC.js";
-import { t as _sfc_main$1 } from "./PublicLayout-BmUbivea.js";
+import { t as _sfc_main$1 } from "./PublicLayout-B_Abv_MX.js";
 import { Fragment, createBlock, createCommentVNode, createVNode, openBlock, ref, renderList, toDisplayString, unref, useSSRContext, vShow, withCtx, withDirectives } from "vue";
 import { Head, router } from "@inertiajs/vue3";
 import { ssrInterpolate, ssrRenderAttr, ssrRenderClass, ssrRenderComponent, ssrRenderList, ssrRenderStyle } from "vue/server-renderer";
@@ -30,7 +30,7 @@ var _sfc_main = {
 				default: withCtx((_, _push, _parent, _scopeId) => {
 					if (_push) {
 						_push(ssrRenderComponent(unref(Head), { title: "کافه و رستوران رژیمی M8 | ساری" }, null, _parent, _scopeId));
-						_push(`<section class="relative bg-zinc-950 border-b border-zinc-800/80 py-16 sm:py-24 overflow-hidden"${_scopeId}><div class="absolute inset-0 z-0"${_scopeId}><img src="/images/gym/gym_protein_cafe.jpg" alt="کافه بار پروتئینی M8" class="w-full h-full object-cover opacity-25"${_scopeId}><div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/40"${_scopeId}></div><div class="absolute -top-24 right-1/4 w-96 h-96 bg-lime-500/10 rounded-full blur-3xl pointer-events-none"${_scopeId}></div></div><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"${_scopeId}><div class="max-w-3xl"${_scopeId}><span class="inline-block px-3 py-1 rounded-full bg-lime-400/10 text-lime-400 text-xs font-bold border border-lime-400/30 mb-3"${_scopeId}> کافه سلامت و بار پروتئینی M8 </span><h1 class="text-3xl sm:text-5xl font-black text-white"${_scopeId}>تغذیه سالم، سوخت عضله‌سازی شما</h1><p class="text-xs sm:text-sm text-zinc-300 mt-3 leading-relaxed"${_scopeId}> انواع شیک‌های پروتئینی، سالادهای غنی، وعده‌های رژیمی گریل و قهوه‌های تخصصی پیش از تمرین. </p><div class="mt-4 p-3 rounded-2xl bg-amber-400/10 border border-amber-400/20 text-amber-400 text-xs inline-flex items-center gap-2"${_scopeId}>`);
+						_push(`<section class="relative bg-zinc-950 border-b border-zinc-800/80 py-16 sm:py-24 overflow-hidden"${_scopeId}><div class="absolute inset-0 z-0"${_scopeId}><img src="/images/gym/cafe_smoothie_clean.jpg" alt="کافه بار پروتئینی M8" class="w-full h-full object-cover opacity-25"${_scopeId}><div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/40"${_scopeId}></div><div class="absolute -top-24 right-1/4 w-96 h-96 bg-lime-500/10 rounded-full blur-3xl pointer-events-none"${_scopeId}></div></div><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"${_scopeId}><div class="max-w-3xl"${_scopeId}><span class="inline-block px-3 py-1 rounded-full bg-lime-400/10 text-lime-400 text-xs font-bold border border-lime-400/30 mb-3"${_scopeId}> کافه سلامت و بار پروتئینی M8 </span><h1 class="text-3xl sm:text-5xl font-black text-white"${_scopeId}>تغذیه سالم، سوخت عضله‌سازی شما</h1><p class="text-xs sm:text-sm text-zinc-300 mt-3 leading-relaxed"${_scopeId}> انواع شیک‌های پروتئینی، سالادهای غنی، وعده‌های رژیمی گریل و قهوه‌های تخصصی پیش از تمرین. </p><div class="mt-4 p-3 rounded-2xl bg-amber-400/10 border border-amber-400/20 text-amber-400 text-xs inline-flex items-center gap-2"${_scopeId}>`);
 						_push(ssrRenderComponent(unref(Flame), { class: "w-4 h-4" }, null, _parent, _scopeId));
 						_push(`<span${_scopeId}>اعضای ویژه VIP از ۲۰٪ تخفیف اختصاصی در کلیه سفارش‌های کافه برخوردارند.</span></div></div></div></section><section class="py-12 bg-zinc-950"${_scopeId}><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"${_scopeId}><div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 border-b border-zinc-900"${_scopeId}><!--[-->`);
 						ssrRenderList(__props.categories, (cat) => {
@@ -40,7 +40,7 @@ var _sfc_main = {
 						ssrRenderList(__props.categories, (cat) => {
 							_push(`<div${_scopeId}><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" style="${ssrRenderStyle(activeCategory.value === cat.id ? null : { display: "none" })}"${_scopeId}><!--[-->`);
 							ssrRenderList(cat.products, (item) => {
-								_push(`<div class="p-5 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-lime-400/40 transition-all flex flex-col justify-between group"${_scopeId}><div${_scopeId}><div class="h-44 rounded-2xl overflow-hidden mb-4 bg-zinc-950"${_scopeId}><img${ssrRenderAttr("src", item.images?.[0] || "/images/gym/gym_protein_cafe.jpg")}${ssrRenderAttr("alt", item.title)} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"${_scopeId}></div><div class="flex items-start justify-between gap-2 mb-2"${_scopeId}><h3 class="text-sm font-bold text-white"${_scopeId}>${ssrInterpolate(item.title)}</h3>`);
+								_push(`<div class="p-5 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-lime-400/40 transition-all flex flex-col justify-between group"${_scopeId}><div${_scopeId}><div class="h-44 rounded-2xl overflow-hidden mb-4 bg-zinc-950"${_scopeId}><img${ssrRenderAttr("src", item.images?.[0] || "/images/gym/cafe_smoothie_clean.jpg")}${ssrRenderAttr("alt", item.title)} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"${_scopeId}></div><div class="flex items-start justify-between gap-2 mb-2"${_scopeId}><h3 class="text-sm font-bold text-white"${_scopeId}>${ssrInterpolate(item.title)}</h3>`);
 								if (item.discount_price) _push(`<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-500/20 text-red-400"${_scopeId}> تخفیف </span>`);
 								else _push(`<!---->`);
 								_push(`</div><p class="text-xs text-zinc-400 line-clamp-2 mb-4 leading-relaxed"${_scopeId}>${ssrInterpolate(item.description)}</p>`);
@@ -63,7 +63,7 @@ var _sfc_main = {
 						createVNode(unref(Head), { title: "کافه و رستوران رژیمی M8 | ساری" }),
 						createVNode("section", { class: "relative bg-zinc-950 border-b border-zinc-800/80 py-16 sm:py-24 overflow-hidden" }, [createVNode("div", { class: "absolute inset-0 z-0" }, [
 							createVNode("img", {
-								src: "/images/gym/gym_protein_cafe.jpg",
+								src: "/images/gym/cafe_smoothie_clean.jpg",
 								alt: "کافه بار پروتئینی M8",
 								class: "w-full h-full object-cover opacity-25"
 							}),
@@ -88,7 +88,7 @@ var _sfc_main = {
 									class: "p-5 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-lime-400/40 transition-all flex flex-col justify-between group"
 								}, [createVNode("div", null, [
 									createVNode("div", { class: "h-44 rounded-2xl overflow-hidden mb-4 bg-zinc-950" }, [createVNode("img", {
-										src: item.images?.[0] || "/images/gym/gym_protein_cafe.jpg",
+										src: item.images?.[0] || "/images/gym/cafe_smoothie_clean.jpg",
 										alt: item.title,
 										class: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
 									}, null, 8, ["src", "alt"])]),

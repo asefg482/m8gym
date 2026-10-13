@@ -1,0 +1,30 @@
+{
+    frankenphp
+    order php_server before file_server
+}
+
+:80 {
+    root * /var/www/html/public
+    encode zstd br gzip
+
+    # Execute PHP files via FrankenPHP
+    php_server
+
+    # Allow uploads up to 100MB
+    request_body {
+        max_size 100MB
+    }
+
+    # High-performance caching for Vite assets & public uploads
+    @static {
+        path /build/* /storage/* /fonts/* /images/* /favicon.svg /favicon.ico
+    }
+    header @static Cache-Control "public, max-age=31536000, immutable"
+
+    # Security: deny access to sensitive hidden files
+    @hidden {
+        path /.*
+        not path /.well-known/*
+    }
+    error @hidden 404
+}

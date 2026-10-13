@@ -58,12 +58,12 @@ createServer((page) => createInertiaApp({
 		"./Pages/Panel/Trainer/Profile.vue": () => import("./assets/Profile-B27ru6u-.js"),
 		"./Pages/Panel/Trainer/Students.vue": () => import("./assets/Students-CQPaQPLn.js"),
 		"./Pages/Panel/Trainer/WorkoutPlans.vue": () => import("./assets/WorkoutPlans-ChTMHcGV.js"),
-		"./Pages/Public/Cafe.vue": () => import("./assets/Cafe-Cp0sacPT.js"),
-		"./Pages/Public/Hairdresser.vue": () => import("./assets/Hairdresser-BpUDU9WQ.js"),
-		"./Pages/Public/Home.vue": () => import("./assets/Home-D8yA5zJx.js"),
-		"./Pages/Public/Massage.vue": () => import("./assets/Massage-B7EGT_SX.js"),
-		"./Pages/Public/ProductDetail.vue": () => import("./assets/ProductDetail-DlqJ_zP8.js"),
-		"./Pages/Public/Shop.vue": () => import("./assets/Shop-BToCMcSS.js")
+		"./Pages/Public/Cafe.vue": () => import("./assets/Cafe-8Rr9XJPX.js"),
+		"./Pages/Public/Hairdresser.vue": () => import("./assets/Hairdresser-SwlqkkQ7.js"),
+		"./Pages/Public/Home.vue": () => import("./assets/Home-C3CkPGo6.js"),
+		"./Pages/Public/Massage.vue": () => import("./assets/Massage-DJm72JHq.js"),
+		"./Pages/Public/ProductDetail.vue": () => import("./assets/ProductDetail-njL6tUVH.js"),
+		"./Pages/Public/Shop.vue": () => import("./assets/Shop-Bn8G79cp.js")
 	})),
 	setup({ App, props, plugin }) {
 		return createSSRApp({ render: () => h(App, props) }).use(plugin);

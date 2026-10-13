@@ -102,7 +102,7 @@ const facilities = [
         title: 'کافه و رستوران رژیمی M8',
         subtitle: 'Protein Fuel & Healthy Nutrition Bar',
         desc: 'بار پروتئینی تخصصی با اسموتی‌های ارگانیک، شیک‌های پس از تمرین، قهوه اسپرسو تخصصی و بشقاب‌های پروتئینی تنظیم‌شده متناسب با درشت‌مغذی‌ها.',
-        image: '/images/gym/m8_protein_bar.jpg',
+        image: '/images/gym/cafe_smoothie_clean.jpg',
         badge: 'کافه سلامت',
         link: '/cafe'
     },
@@ -118,7 +118,7 @@ const facilities = [
         title: 'آرایشگاه و پیرایش اختصاصی VIP',
         subtitle: 'Gentlemen Grooming & Barber Lounge',
         desc: 'خدمات کامل گرومینگ، فیشیال پوست، اصلاح مو و گریم حرفه‌ای با رزرو اختصاصی آنلاین بدون معطلی پس از اتمام جلسه تمرین.',
-        image: '/images/gym/m8_barber_lounge.jpg',
+        image: '/images/gym/gym_barber_vip.jpg',
         badge: 'پیرایش VIP',
         link: '/hairdresser'
     }
@@ -126,13 +126,6 @@ const facilities = [
 
 // Real Gym Atmosphere & Photos from Sari Location (Neshan & Real Venue)
 const realGymPhotos = [
-    {
-        title: 'سالن کاردیو و چشم‌انداز پانورامای کوهستان ساری',
-        subtitle: 'دید ۳۶۰ درجه به طبیعت سرسبز مازندران و افق شهر',
-        desc: 'ردیف کامل تردمیل‌ها و استپ‌میل‌های پیشرفته در کنار دیواره‌های شیشه‌ای قدی با ویوی کارت‌پستالی کوه‌های البرز.',
-        src: '/images/gym/real/m8_neshan_1.jpg',
-        badge: 'سالن کاردیو و هوازی',
-    },
     {
         title: 'سالن ۲۵۰۰ متری وزنه‌های آزاد و پرورش اندام',
         subtitle: 'سقف مرتفع صنعتی، تهویه هوای تازه و نورپردازی حرفه‌ای',
@@ -154,6 +147,13 @@ const realGymPhotos = [
         src: '/images/gym/real/m8_neshan_4.jpg',
         badge: 'لاین تمرینات هوازی',
     },
+    {
+        title: 'بخش پاورلیفتینگ و دستگاه‌های پیشرفته بیومکانیک',
+        subtitle: 'طراحی مدرن سالن بدنسازی M8 با استانداردهای فدراسیون',
+        desc: 'تجهیزات تخصصی پرورش اندام و اسکات کیج‌های ایمن با نظارت مربیان رسمی باشگاه M8 ساری.',
+        src: '/images/gym/m8_strength_floor.jpg',
+        badge: 'سالن قدرتی M8',
+    },
 ];
 
 const selectedRealPhoto = ref(null);
@@ -164,12 +164,12 @@ function closePhotoModal() {
     selectedRealPhoto.value = null;
 }
 
-// Fallback coach photos
+// Fallback coach photos (Only verified male trainers)
 const defaultCoachImages = [
     '/images/gym/coach_ali.jpg',
     '/images/gym/coach_reza.jpg',
-    'https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&auto=format&fit=crop&q=80'
+    '/images/gym/coach_ali.jpg',
+    '/images/gym/coach_reza.jpg'
 ];
 </script>
 
@@ -329,8 +329,8 @@ const defaultCoachImages = [
                     <div class="lg:col-span-6 relative">
                         <div class="relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-2xl">
                             <img
-                                src="/images/gym/m8_panoramic_cardio.jpg"
-                                alt="سالن ۲۵۰۰ متری و کاردیوی پانورامای باشگاه M8 ساری"
+                                src="/images/gym/m8_strength_floor.jpg"
+                                alt="سالن ۲۵۰۰ متری و بخش قدرتی باشگاه M8 ساری"
                                 class="w-full h-[400px] sm:h-[480px] object-cover object-center filter contrast-110"
                             />
                             <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80" />

@@ -46,7 +46,7 @@ function submitBooking() {
         <section class="relative bg-zinc-950 border-b border-zinc-800/80 py-16 sm:py-24 overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img
-                    src="/images/gym/m8_barber_lounge.jpg"
+                    src="/images/gym/gym_barber_vip.jpg"
                     alt="آرایشگاه و پیرایش مردانه M8"
                     class="w-full h-full object-cover opacity-25"
                 />
@@ -75,7 +75,7 @@ function submitBooking() {
                         <div>
                             <div class="h-48 rounded-2xl overflow-hidden bg-zinc-950 mb-5">
                                 <img
-                                    :src="service.image || '/images/gym/m8_barber_lounge.jpg'"
+                                    :src="service.image || '/images/gym/gym_barber_vip.jpg'"
                                     :alt="service.title"
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
