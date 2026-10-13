@@ -29,7 +29,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik"
-      - "traefik.http.routers.m8gym.rule=Host(`m8gym.com`) || Host(`www.m8gym.com`)"
+      - "traefik.http.routers.m8gym.rule=Host(`m8.asefg.ir`)"
       - "traefik.http.routers.m8gym.entrypoints=web,websecure"
       - "traefik.http.routers.m8gym.tls=true"
       - "traefik.http.services.m8gym.loadbalancer.server.port=80"
@@ -55,7 +55,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik"
-      - "traefik.http.routers.db-m8gym.rule=Host(`db.m8gym.com`)"
+      - "traefik.http.routers.db-m8gym.rule=Host(`db-m8.asefg.ir`)"
       - "traefik.http.routers.db-m8gym.entrypoints=web,websecure"
       - "traefik.http.routers.db-m8gym.tls=true"
       - "traefik.http.services.db-m8gym.loadbalancer.server.port=80"
