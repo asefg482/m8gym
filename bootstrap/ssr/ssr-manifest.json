@@ -1,35 +1,35 @@
 {
   "\u0000plugin-vue:export-helper": [
-    "/build/assets/Home-BOQoxK44.js",
+    "/build/assets/Home-BCis0gdY.js",
     "/build/assets/Home-B4S4zj0C.css"
   ],
   "node_modules/laravel-vite-plugin/inertia-helpers/index.js": [],
   "resources/js/Components/BottomNav.vue": [
-    "/build/assets/PublicLayout-zNrlFzv-.js"
+    "/build/assets/PublicLayout-DKfA00Bj.js"
   ],
   "resources/js/Components/DynamicIcon.vue": [
-    "/build/assets/PanelLayout-DGUuVM6t.js"
+    "/build/assets/PanelLayout-Q01EXykc.js"
   ],
   "resources/js/Components/FlashMessage.vue": [
     "/build/assets/FlashMessage-D7IaXkt7.js"
   ],
   "resources/js/Components/Footer.vue": [
-    "/build/assets/PublicLayout-zNrlFzv-.js"
+    "/build/assets/PublicLayout-DKfA00Bj.js"
   ],
   "resources/js/Components/Navbar.vue": [
-    "/build/assets/PublicLayout-zNrlFzv-.js"
+    "/build/assets/PublicLayout-DKfA00Bj.js"
   ],
   "resources/js/Components/Pagination.vue": [
-    "/build/assets/Pagination-BBik0JPe.js"
+    "/build/assets/Pagination-DHt3q8cw.js"
   ],
   "resources/js/Components/RoleSwitcher.vue": [
-    "/build/assets/RoleSwitcher-Sid3IMe_.js"
+    "/build/assets/RoleSwitcher-W0YJLUng.js"
   ],
   "resources/js/Layouts/PanelLayout.vue": [
-    "/build/assets/PanelLayout-DGUuVM6t.js"
+    "/build/assets/PanelLayout-Q01EXykc.js"
   ],
   "resources/js/Layouts/PublicLayout.vue": [
-    "/build/assets/PublicLayout-zNrlFzv-.js"
+    "/build/assets/PublicLayout-DKfA00Bj.js"
   ],
   "resources/js/Pages/Auth/Login.vue": [
     "/build/assets/Login-BTlBKqWf.js"
@@ -38,141 +38,141 @@
     "/build/assets/SelectRole-COAZh-ed.js"
   ],
   "resources/js/Pages/Panel/Buffet/Dashboard.vue": [
-    "/build/assets/Dashboard-w9NQ4Aa-.js"
+    "/build/assets/Dashboard-5o7NDzXD.js"
   ],
   "resources/js/Pages/Panel/Buffet/Menu.vue": [
-    "/build/assets/Menu-CiOvgNur.js"
+    "/build/assets/Menu-BcwnnhZq.js"
   ],
   "resources/js/Pages/Panel/Buffet/Orders.vue": [
-    "/build/assets/Orders-CxKN01V4.js"
+    "/build/assets/Orders-20tl98lp.js"
   ],
   "resources/js/Pages/Panel/Buffet/Pos.vue": [
-    "/build/assets/Pos-C7sef3kt.js"
+    "/build/assets/Pos-DR3Hpfmv.js"
   ],
   "resources/js/Pages/Panel/Buffet/Sales.vue": [
-    "/build/assets/Sales-DAZB1TEm.js"
+    "/build/assets/Sales-D1dyBo0_.js"
   ],
   "resources/js/Pages/Panel/Manager/Banners.vue": [
-    "/build/assets/Banners-XKa1v0hP.js"
+    "/build/assets/Banners-9JfJEWJd.js"
   ],
   "resources/js/Pages/Panel/Manager/Leads.vue": [
-    "/build/assets/Leads-C1Du3Hqy.js"
+    "/build/assets/Leads-DRLRX_CL.js"
   ],
   "resources/js/Pages/Panel/Manager/Plans.vue": [
-    "/build/assets/Plans-w2Sj1h-g.js"
+    "/build/assets/Plans-BxT4sLm2.js"
   ],
   "resources/js/Pages/Panel/Manager/RoleMatrix.vue": [
-    "/build/assets/RoleMatrix-B7x6CsiQ.js"
+    "/build/assets/RoleMatrix-BYPHH5_P.js"
   ],
   "resources/js/Pages/Panel/Manager/Settings.vue": [
-    "/build/assets/Settings-BsmbVhu4.js"
+    "/build/assets/Settings-BC-_J1uM.js"
   ],
   "resources/js/Pages/Panel/Member/Bookings.vue": [
-    "/build/assets/Bookings-DZ5ce6ao.js"
+    "/build/assets/Bookings-BzaWP6tl.js"
   ],
   "resources/js/Pages/Panel/Member/Dashboard.vue": [
-    "/build/assets/Dashboard-Btov5cF4.js"
+    "/build/assets/Dashboard-DwsrN_IJ.js"
   ],
   "resources/js/Pages/Panel/Member/History.vue": [
-    "/build/assets/History-DeuC2X76.js"
+    "/build/assets/History-DFBbQK7F.js"
   ],
   "resources/js/Pages/Panel/Member/Membership.vue": [
-    "/build/assets/Membership-CoBklutH.js"
+    "/build/assets/Membership-QrraF3OU.js"
   ],
   "resources/js/Pages/Panel/Member/Orders.vue": [
-    "/build/assets/Orders-CACxyqrR.js"
+    "/build/assets/Orders-E4sFXpkR.js"
   ],
   "resources/js/Pages/Panel/Member/Progress.vue": [
-    "/build/assets/Progress-Bfu0zI6h.js"
+    "/build/assets/Progress-D_n1kV8e.js"
   ],
   "resources/js/Pages/Panel/Member/WorkoutPlans.vue": [
-    "/build/assets/WorkoutPlans-D_rMKTFn.js"
+    "/build/assets/WorkoutPlans-CCsnBytd.js"
   ],
   "resources/js/Pages/Panel/Service/Bookings.vue": [
-    "/build/assets/Bookings-CcT1ERq8.js"
+    "/build/assets/Bookings-cQkvMS9X.js"
   ],
   "resources/js/Pages/Panel/Service/Dashboard.vue": [
-    "/build/assets/Dashboard-BCs-iVyy.js"
+    "/build/assets/Dashboard-Dx-dgdqI.js"
   ],
   "resources/js/Pages/Panel/Service/Schedule.vue": [
-    "/build/assets/Schedule--AhTFzYu.js"
+    "/build/assets/Schedule-BE5WeTyZ.js"
   ],
   "resources/js/Pages/Panel/Service/Services.vue": [
-    "/build/assets/Services-_YVFbLF4.js"
+    "/build/assets/Services-zIGjyp5t.js"
   ],
   "resources/js/Pages/Panel/Shop/Categories.vue": [
-    "/build/assets/Categories-C5uLbkCI.js"
+    "/build/assets/Categories-CkrZ2bhF.js"
   ],
   "resources/js/Pages/Panel/Shop/Dashboard.vue": [
-    "/build/assets/Dashboard-By9ew2Ct.js"
+    "/build/assets/Dashboard-BgfN_NdO.js"
   ],
   "resources/js/Pages/Panel/Shop/Orders.vue": [
-    "/build/assets/Orders-0Qo3yPmm.js"
+    "/build/assets/Orders-Bjo95I6L.js"
   ],
   "resources/js/Pages/Panel/Shop/Pos.vue": [
-    "/build/assets/Pos-B_rZjviM.js"
+    "/build/assets/Pos-B5hjyhQf.js"
   ],
   "resources/js/Pages/Panel/Shop/Products.vue": [
-    "/build/assets/Products-CI4N9N5w.js"
+    "/build/assets/Products-CuT6fm2C.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Attendances.vue": [
-    "/build/assets/Attendances-d88ER_hw.js"
+    "/build/assets/Attendances-o23Xj_k2.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Audit.vue": [
-    "/build/assets/Audit-DqBoIdh9.js"
+    "/build/assets/Audit-D78bZOgC.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Dashboard.vue": [
-    "/build/assets/Dashboard-BEZwULdP.js"
+    "/build/assets/Dashboard-DR12QRts.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Reports.vue": [
-    "/build/assets/Reports-BN1ZiQ-h.js"
+    "/build/assets/Reports-DQyxn2uE.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Settings.vue": [
-    "/build/assets/Settings-CFPMLClB.js"
+    "/build/assets/Settings-wZO0o2Dm.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/UserDetail.vue": [
-    "/build/assets/UserDetail-CtLg1iyE.js"
+    "/build/assets/UserDetail-C0sm5KAr.js"
   ],
   "resources/js/Pages/Panel/SuperAdmin/Users.vue": [
-    "/build/assets/Users-4PCmJZP7.js"
+    "/build/assets/Users-CewPxyeU.js"
   ],
   "resources/js/Pages/Panel/Trainer/Dashboard.vue": [
-    "/build/assets/Dashboard-D9QH6l7L.js"
+    "/build/assets/Dashboard-DsaGTjfV.js"
   ],
   "resources/js/Pages/Panel/Trainer/Incomes.vue": [
-    "/build/assets/Incomes-DTRAxXgA.js"
+    "/build/assets/Incomes-B6tT-_UB.js"
   ],
   "resources/js/Pages/Panel/Trainer/Profile.vue": [
-    "/build/assets/Profile-DfSfb2c9.js"
+    "/build/assets/Profile-D2K-JoSc.js"
   ],
   "resources/js/Pages/Panel/Trainer/Students.vue": [
-    "/build/assets/Students-CXVf7Ea5.js"
+    "/build/assets/Students-Hz7PT1Pf.js"
   ],
   "resources/js/Pages/Panel/Trainer/WorkoutPlans.vue": [
-    "/build/assets/WorkoutPlans-Cnt28hGP.js"
+    "/build/assets/WorkoutPlans-BgSAL0P8.js"
   ],
   "resources/js/Pages/Public/Cafe.vue": [
-    "/build/assets/Cafe-68dxk5rl.js"
+    "/build/assets/Cafe-_abdkIio.js"
   ],
   "resources/js/Pages/Public/Hairdresser.vue": [
-    "/build/assets/Hairdresser-CGkWOKns.js"
+    "/build/assets/Hairdresser-CEs_peJX.js"
   ],
   "resources/js/Pages/Public/Home.vue": [
-    "/build/assets/Home-BOQoxK44.js",
+    "/build/assets/Home-BCis0gdY.js",
     "/build/assets/Home-B4S4zj0C.css"
   ],
   "resources/js/Pages/Public/Home.vue?vue&type=style&index=0&scoped=9ac7f2cc&lang.css": [
-    "/build/assets/Home-BOQoxK44.js",
+    "/build/assets/Home-BCis0gdY.js",
     "/build/assets/Home-B4S4zj0C.css"
   ],
   "resources/js/Pages/Public/Massage.vue": [
-    "/build/assets/Massage-DwGTWWVu.js"
+    "/build/assets/Massage-D65t7UbL.js"
   ],
   "resources/js/Pages/Public/ProductDetail.vue": [
-    "/build/assets/ProductDetail-Bae-Bhct.js"
+    "/build/assets/ProductDetail-DYslJ7aK.js"
   ],
   "resources/js/Pages/Public/Shop.vue": [
-    "/build/assets/Shop-CNe4L0Lg.js"
+    "/build/assets/Shop-BYidZ_VX.js"
   ],
   "resources/js/Utils/formatters.js": [
     "/build/assets/formatters-GAWR9pZC.js"

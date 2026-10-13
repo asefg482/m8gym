@@ -42,3 +42,319 @@ button, input, optgroup, select, textarea {
 ::-webkit-scrollbar-thumb:hover {
     background: #3f3f46;
 }
+
+/* ==========================================================================
+   Dashlite Signature Light Theme (Admin & User Panels)
+   ========================================================================== */
+.panel-light {
+    background-color: #f5f6fa !important;
+    color: #1e293b !important;
+}
+
+.panel-light main {
+    background-color: #f5f6fa !important;
+}
+
+/* Backgrounds & Cards to Crisp White */
+.panel-light .bg-zinc-900,
+.panel-light .bg-zinc-900\/95,
+.panel-light .bg-zinc-900\/90,
+.panel-light .bg-zinc-900\/80,
+.panel-light .bg-zinc-900\/70,
+.panel-light .bg-zinc-900\/60 {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05) !important;
+}
+
+.panel-light .bg-zinc-900\/50,
+.panel-light .bg-zinc-900\/40,
+.panel-light .bg-zinc-900\/30,
+.panel-light .bg-zinc-900\/20,
+.panel-light .bg-zinc-900\/10,
+.panel-light .bg-zinc-950,
+.panel-light .bg-zinc-950\/90,
+.panel-light .bg-zinc-950\/80,
+.panel-light .bg-zinc-950\/70,
+.panel-light .bg-zinc-950\/60,
+.panel-light .bg-zinc-950\/50,
+.panel-light .bg-zinc-950\/40,
+.panel-light .bg-zinc-950\/30,
+.panel-light .bg-zinc-950\/20 {
+    background-color: #f8fafc !important;
+}
+
+/* Hero card gradients in light mode */
+.panel-light .bg-gradient-to-r.from-zinc-900.to-zinc-950,
+.panel-light .bg-gradient-to-l.from-zinc-900 {
+    background-image: none !important;
+    background-color: #ffffff !important;
+}
+
+/* Inputs, Selects & Textareas */
+.panel-light input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+.panel-light select,
+.panel-light textarea {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #0f172a !important;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.03) !important;
+}
+
+.panel-light input::placeholder,
+.panel-light textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+.panel-light input:focus,
+.panel-light select:focus,
+.panel-light textarea:focus {
+    border-color: #84cc16 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(132, 204, 22, 0.25) !important;
+}
+
+/* Checkboxes */
+.panel-light input[type="checkbox"] {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Borders */
+.panel-light .border-zinc-800,
+.panel-light .border-zinc-800\/90,
+.panel-light .border-zinc-800\/80,
+.panel-light .border-zinc-800\/70,
+.panel-light .border-zinc-800\/60,
+.panel-light .border-zinc-800\/50,
+.panel-light .border-zinc-800\/40,
+.panel-light .border-zinc-800\/30,
+.panel-light .border-zinc-800\/20,
+.panel-light .border-zinc-800\/10,
+.panel-light .border-zinc-700,
+.panel-light .border-zinc-700\/80,
+.panel-light .border-zinc-700\/60,
+.panel-light .border-zinc-700\/50,
+.panel-light .border-zinc-900,
+.panel-light .border-zinc-950 {
+    border-color: #e2e8f0 !important;
+}
+
+.panel-light .hover\:border-zinc-700:hover,
+.panel-light .hover\:border-zinc-600:hover,
+.panel-light .hover\:border-zinc-500:hover {
+    border-color: #cbd5e1 !important;
+}
+
+.panel-light .divide-zinc-800 > :not([hidden]) ~ :not([hidden]),
+.panel-light .divide-zinc-800\/80 > :not([hidden]) ~ :not([hidden]),
+.panel-light .divide-zinc-800\/60 > :not([hidden]) ~ :not([hidden]),
+.panel-light .divide-zinc-800\/50 > :not([hidden]) ~ :not([hidden]) {
+    border-color: #f1f5f9 !important;
+}
+
+/* Typography Hierarchy */
+.panel-light .text-white {
+    color: #0f172a !important;
+}
+
+.panel-light .text-zinc-100 {
+    color: #0f172a !important;
+}
+
+.panel-light .text-zinc-200 {
+    color: #1e293b !important;
+}
+
+.panel-light .text-zinc-300 {
+    color: #334155 !important;
+}
+
+.panel-light .text-zinc-400 {
+    color: #64748b !important;
+}
+
+.panel-light .text-zinc-500 {
+    color: #94a3b8 !important;
+}
+
+.panel-light .text-zinc-600 {
+    color: #cbd5e1 !important;
+}
+
+/* Tables & Lists */
+.panel-light table thead {
+    background-color: #f8fafc !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.panel-light table thead th {
+    color: #475569 !important;
+    font-weight: 700 !important;
+}
+
+.panel-light table tbody tr {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.panel-light table tbody tr:hover,
+.panel-light .hover\:bg-zinc-800\/30:hover,
+.panel-light .hover\:bg-zinc-800\/20:hover,
+.panel-light .hover\:bg-zinc-800\/40:hover {
+    background-color: #f8fafc !important;
+}
+
+/* Secondary Buttons & Control Boxes */
+.panel-light .bg-zinc-800,
+.panel-light .bg-zinc-800\/80,
+.panel-light .bg-zinc-800\/90 {
+    background-color: #f1f5f9 !important;
+    color: #334155 !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.panel-light .bg-zinc-800:hover,
+.panel-light .hover\:bg-zinc-800:hover,
+.panel-light .hover\:bg-zinc-800\/80:hover,
+.panel-light .hover\:bg-zinc-700:hover,
+.panel-light .hover\:bg-zinc-900:hover,
+.panel-light .hover\:bg-zinc-900\/80:hover {
+    background-color: #e2e8f0 !important;
+    color: #0f172a !important;
+}
+
+.panel-light .hover\:text-white:hover {
+    color: #0f172a !important;
+}
+
+/* Accent Badges & High Contrast Text */
+.panel-light .text-lime-400 {
+    color: #4d7c0f !important;
+}
+
+.panel-light .bg-lime-400 {
+    background-color: #a3e635 !important;
+    color: #000000 !important;
+}
+
+.panel-light .bg-lime-400:hover,
+.panel-light .hover\:bg-lime-300:hover {
+    background-color: #84cc16 !important;
+}
+
+.panel-light .bg-lime-400\/10,
+.panel-light .bg-lime-400\/12,
+.panel-light .bg-lime-400\/15 {
+    background-color: #ecfccb !important;
+    color: #3f6212 !important;
+}
+
+.panel-light .border-lime-400\/20,
+.panel-light .border-lime-400\/30,
+.panel-light .border-lime-400\/40 {
+    border-color: #bef264 !important;
+}
+
+.panel-light .text-amber-400 {
+    color: #b45309 !important;
+}
+
+.panel-light .bg-amber-400\/10 {
+    background-color: #fef3c7 !important;
+    color: #92400e !important;
+}
+
+.panel-light .border-amber-400\/20,
+.panel-light .border-amber-400\/30 {
+    border-color: #fde68a !important;
+}
+
+.panel-light .text-emerald-400 {
+    color: #15803d !important;
+}
+
+.panel-light .bg-emerald-400\/10 {
+    background-color: #dcfce7 !important;
+    color: #166534 !important;
+}
+
+.panel-light .border-emerald-400\/20,
+.panel-light .border-emerald-400\/30 {
+    border-color: #bbf7d0 !important;
+}
+
+.panel-light .text-rose-400,
+.panel-light .text-red-400 {
+    color: #b91c1c !important;
+}
+
+.panel-light .bg-rose-400\/10 {
+    background-color: #ffe4e6 !important;
+    color: #9f1239 !important;
+}
+
+.panel-light .border-rose-400\/20,
+.panel-light .border-rose-400\/30 {
+    border-color: #fecdd3 !important;
+}
+
+.panel-light .text-cyan-400 {
+    color: #0e7490 !important;
+}
+
+.panel-light .bg-cyan-400\/10 {
+    background-color: #cffafe !important;
+    color: #155e75 !important;
+}
+
+.panel-light .border-cyan-400\/20 {
+    border-color: #a5f3fc !important;
+}
+
+.panel-light .text-blue-400 {
+    color: #1d4ed8 !important;
+}
+
+.panel-light .bg-blue-400\/10 {
+    background-color: #dbeafe !important;
+    color: #1e40af !important;
+}
+
+.panel-light .border-blue-400\/20 {
+    border-color: #bfdbfe !important;
+}
+
+.panel-light .text-purple-400 {
+    color: #7e22ce !important;
+}
+
+.panel-light .bg-purple-400\/10 {
+    background-color: #f3e8ff !important;
+    color: #6b21a8 !important;
+}
+
+.panel-light .border-purple-400\/20 {
+    border-color: #e9d5ff !important;
+}
+
+/* Modals & Backdrops */
+.panel-light .fixed.inset-0.bg-black\/80,
+.panel-light .fixed.inset-0.bg-black\/75,
+.panel-light .fixed.inset-0.bg-black\/70,
+.panel-light .fixed.inset-0.bg-black\/60 {
+    background-color: rgba(15, 23, 42, 0.45) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+/* Light scrollbar */
+.panel-light ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+.panel-light ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+.panel-light ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+

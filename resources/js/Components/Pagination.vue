@@ -24,10 +24,10 @@ function formatLabel(label) {
 </script>
 
 <template>
-    <div v-if="links && links.length > 3" class="p-4 bg-zinc-950/70 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-        <div class="text-zinc-400 text-[11px]">
+    <div v-if="links && links.length > 3" class="p-4 bg-white border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+        <div class="text-slate-500 text-[11px]">
             <span v-if="total !== undefined && from !== undefined && to !== undefined">
-                نمایش ردیف <span class="font-mono font-bold text-white">{{ from }}</span> تا <span class="font-mono font-bold text-white">{{ to }}</span> از کل <span class="font-mono font-bold text-lime-400">{{ total }}</span> رکورد
+                نمایش ردیف <span class="font-mono font-bold text-slate-800">{{ from }}</span> تا <span class="font-mono font-bold text-slate-800">{{ to }}</span> از کل <span class="font-mono font-bold text-lime-700">{{ total }}</span> رکورد
             </span>
             <span v-else>
                 صفحات نتایج
@@ -38,7 +38,7 @@ function formatLabel(label) {
             <template v-for="(link, key) in links" :key="key">
                 <span
                     v-if="!link.url"
-                    class="px-3 py-1.5 rounded-lg text-[11px] text-zinc-600 border border-zinc-900 bg-zinc-950 cursor-not-allowed select-none"
+                    class="px-3 py-1.5 rounded-lg text-[11px] text-slate-400 border border-slate-200 bg-slate-50 cursor-not-allowed select-none"
                     v-html="formatLabel(link.label)"
                 />
                 <Link
@@ -47,8 +47,8 @@ function formatLabel(label) {
                     class="px-3 py-1.5 rounded-lg text-[11px] font-bold transition-all"
                     :class="[
                         link.active
-                            ? 'bg-lime-400 text-black shadow-md shadow-lime-400/20'
-                            : 'bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 hover:text-white'
+                            ? 'bg-lime-400 text-black shadow-xs'
+                            : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 hover:text-slate-900'
                     ]"
                     v-html="formatLabel(link.label)"
                 />
