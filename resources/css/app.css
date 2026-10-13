@@ -1,0 +1,35 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+@source '../js/**/*.{vue,js,ts}';
+
+@theme {
+    --font-sans: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    --color-brand: #ccff00;
+    --color-brand-hover: #b3e600;
+    --color-brand-orange: #ff5500;
+}
+
+html {
+    direction: rtl;
+    font-family: var(--font-sans);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f46;
+}
